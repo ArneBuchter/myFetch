@@ -11,10 +11,10 @@ let myFetch = myFetch.init({
     key: "1234"
 });
 
-/*needs a key, if API do not need a key - type 1234
- "users/2" is the resource */
+needs a key, if API do not need a key - type 1234
+"users/2" is the resource
 
- 
+
 myFetch.get('users/2')  
     .then(result => {
         console.log(result);
