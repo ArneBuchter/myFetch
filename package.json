@@ -1,0 +1,25 @@
+{
+  "name": "@arnebuchter/fetch",
+  "version": "0.0.1",
+  "main": "umd.js",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arne Emil Buchter <arne@arvi.dk>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArneBuchter/myFetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArneBuchter/myFetch/issues"
+  },
+  "homepage": "https://github.com/ArneBuchter/myFetch#readme",
+  "description": ""
+}

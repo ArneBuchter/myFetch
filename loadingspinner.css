@@ -1,0 +1,30 @@
+
+.spinner{
+    width: 3em;
+    height: 3em;
+    border: 10px solid;
+    border-color: tomato red transparent transparent;
+    border-radius: 50%;
+    animation: animateSpinner 500ms infinite linear;
+}
+
+@keyframes animateSpinner {
+    15%{
+        transform: rotate(60deg);
+    }
+    30%{
+        transform: rotate(90deg);
+    }
+    45%{
+        transform: rotate(150deg);
+    }
+    60%{
+        transform: rotate(220deg);
+    }
+    75%{
+        transform: rotate(290deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

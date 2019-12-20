@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="loadingspinner.css">
+    <title>Document</title>
+</head>
+<body>
+ <!--    <div class="pokemon">
+        <div class="spinner"></div>
+        <h1 class="pokemon__name"></h1>
+        <img src="" alt="" srcset="" class="pokemon__image">
+        <ul class="pokemon__abilityList">
+
+        </ul>
+    </div> -->
+
+    <form class="userForm">
+        <fieldset>
+            <label for="user_name">Navn</label>
+            <input type="text" name="name" id="user_name">
+        </fieldset>
+        <fieldset>
+            <label for="user_role">Rolle</label>
+            <select name="role" id="user_role">
+                <option value="mechagodzilla">Mecha Godzilla</option>
+                <option value="cutekitten">Sød lille kattekilling</option>
+                <option value="admin">Administrator</option>
+            </select>
+        </fieldset>
+        <button type="submit">Opret bruger</button>
+    </form>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+
+    <script src="umd.js"></script>
+
+    <script>
+    let query = myFetch.init({
+        address: "https://reqres.in/api/",
+        key: "1234"
+    });
+
+       myFetch.get("users/").then(result => {
+       console.log(result)
+        });
+        
+        $(".userForm").on("submit", function(e) {
+            e.preventDefault();
+            
+            let data = {
+                name: this.name.value,
+                role: this.role.value
+            };
+
+            myFetch.post("users", data)
+                .then(result => {
+                    console.log(result);
+                })
+        });
+
+    </script>
+</body>
+</html>
