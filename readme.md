@@ -1,11 +1,11 @@
 # Information
 
 This package is used to make it easier to interact with an API. 
-it works with Fetch, xmlhttprequests and nodefetch.
+it works with Fetch, with fallback to xmlhttprequests and support for backend using nodefetch.
 works with or without an API key.
 full CRUD with the commands: get, post, put, kill.
 
-this package is opensource and can be forked and use by anybody
+this package is opensource and can be forked and used by anybody
 
 ## how to install
 
