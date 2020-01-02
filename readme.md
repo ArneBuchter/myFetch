@@ -14,7 +14,7 @@ npm install @arnebuchter/fetch
 ### how to use
 
 
-```
+```javascript
 let myFetch = myFetch.init({
     address: "https://reqres.in/api/",
     key: "1234"
@@ -24,7 +24,7 @@ let myFetch = myFetch.init({
 #### key is mandatory, if the API you are working with do not need a key - type 1234
 
 
-```
+```javascript
 myFetch.get('users/2')
     .then(result => {
         console.log(result);
