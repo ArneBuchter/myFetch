@@ -11,13 +11,15 @@ let myFetch = myFetch.init({
     key: "1234"
 });
 
-needs a key, if API do not need a key - type 1234
-"users/2" is the resource
+key is mandatory, if API you are working with do not need a key - type 1234
 
 
-myFetch.get('users/2')  
+
+myFetch.get('users/2')   #"users/2" is the resource
     .then(result => {
         console.log(result);
 })
+
+users/2 is the resource of your chosen API
 
 you can use get, post, put, kill

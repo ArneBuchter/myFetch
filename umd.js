@@ -22,7 +22,8 @@
             if(typeof fetch === "function") {
             let response = await fetch(this.APIAdress + resource, {
                 headers: {
-                    "Authorization": this.APIKey
+                    "Authorization": this.APIKey,
+                    "Accept": "application/json"
                 }
             });
 
@@ -43,7 +44,8 @@
                 let response = await nodeFetch(this.APIAdress + resource, {
 
                     headers: {
-                        "Authorization": this.APIKey
+                        "Authorization": this.APIKey,
+                        "Accept": "application/json"
                     }
                 });
                 return await response.json();
