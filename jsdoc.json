@@ -1,0 +1,17 @@
+{
+    "source": {
+        "include": ["umd.js"],
+        "includePattern": "js$",
+        "excludePattern": "(node_modules/|docs)"
+    },
+    "plugins": ["plugins/markdown"],
+    "templates": {
+        "cleverlink": true,
+        "monospacelink": true
+    },
+    "opts": {
+        "recurse": true,
+        "destination": "./docs/",
+        "tutorials": "./tutorials"
+    }
+}

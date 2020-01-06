@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fetch-tutorial.css">
+    <title>Fetch tutorial</title>
+</head>
+<body>
+<h1>how to install this module</h1>
+
+<h3>Hi and welcome to this quick tutorial to my small and effective npm fetch module</h3>
+<p>
+to install this module go to your node module and type:
+
+<div class="code">npm init and then</div>
+<div class="code">npm install @arnebuchter/fetch</div>
+</p>
+<p>
+Here are some given examples on how to use this module
+
+<p>first of all you have to have the following jquery string i a script tag in your html</p>
+
+<div class="code">    
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"
+</div>
+<p>Then you can use it like this</p>
+<div class="code">
+let myFetch = myFetch.init({
+    address: "https://reqres.in/api/",
+    key: "1234"
+});
+</div>
+</p>
+<p>
+key is mandatory, if the API you are working with, do not need a key - type 1234
+</p>
+<p>
+
+<div class="code">
+myFetch.get("users/2")
+    .then(result => {
+        console.log(result);
+})
+</div>
+<p>
+users/2 is an example of the resource from your chosen API
+</p>
+<p>
+you can use get, post, put, kill(delete)
+</p>
+</p>
+</body>
+</html>
